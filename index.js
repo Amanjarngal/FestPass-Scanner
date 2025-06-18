@@ -4,8 +4,8 @@ const cors = require("cors");
 require("dotenv").config();
 
 // ✅ Use require instead of import
-const userRoute = require("./routes/user");
-const registerRoute = require("./routes/register");
+const userRoute = require("./Backend/routes/user");
+const registerRoute = require("./Backend/routes/register");
 
 const app = express();
 app.use(cors());
