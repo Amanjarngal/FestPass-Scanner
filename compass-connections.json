@@ -1,0 +1,26 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "72cf95ec-a2c7-4c07-86be-5aa9d62f9cef",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1736350086657"
+        }
+      },
+      "favorite": {
+        "name": "hospital Food Management "
+      },
+      "savedConnectionType": "recent",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
