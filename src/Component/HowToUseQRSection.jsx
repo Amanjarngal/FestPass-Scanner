@@ -45,7 +45,7 @@ export default function HowToUseQRSection() {
     >
       <motion.h2
         initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
+        animate={inView ? { opacity: 1, y: 1 } : {}}
         transition={{ duration: 0.8 }}
         className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-center mb-16 drop-shadow-[0_4px_30px_rgba(255,255,255,0.6)]"
       >

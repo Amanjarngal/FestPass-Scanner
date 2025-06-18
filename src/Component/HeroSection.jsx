@@ -6,7 +6,7 @@ export default function HeroLoader() {
   const [showText, setShowText] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setShowText(false), 4500);
+    const timeout = setTimeout(() => setShowText(false), 3500);
     return () => clearTimeout(timeout);
   }, []);
 
@@ -61,7 +61,7 @@ export default function HeroLoader() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeInOut" }}
-            className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black z-20 text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text drop-shadow-[2px_2px_4px_white] text-center px-4"
+            className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black z-20 text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 bg-clip-text drop-shadow-[4px_4px_4px_white] text-center px-4"
           >
             PRAYAS 2025
           </motion.h1>
