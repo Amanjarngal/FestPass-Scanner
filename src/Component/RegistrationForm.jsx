@@ -17,7 +17,7 @@ export default function RegistrationForm() {
     type: "Attendee",
     events: [],
   });
-
+const baseURL = import.meta.env.VITE_API_BASE_URL;
   const [submittedData, setSubmittedData] = useState(null);
   const [error, setError] = useState("");
 
@@ -53,7 +53,9 @@ export default function RegistrationForm() {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/register", formData);
+      // const res = await axios.post("http://localhost:5000/api/register", formData);
+      const res = await axios.post(`${baseURL}/api/register`, formData);
+
       setSubmittedData(res.data);
     } catch (err) {
       setError("Registration failed. You may already be registered.");

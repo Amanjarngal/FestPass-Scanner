@@ -12,7 +12,7 @@ export default function QRScanner() {
   const html5QrCodeRef = useRef(null);
   const isScannerRunning = useRef(false);
 const [verified, setVerified] = useState(false);
-
+ const baseURL = import.meta.env.VITE_API_BASE_URL
   const startScanner = async () => {
     if (!readerRef.current) return;
 
@@ -37,7 +37,9 @@ const [verified, setVerified] = useState(false);
           setScannedId(decodedText);
           try {
          // Inside QRScanner.jsx
-          const res = await axios.get(`http://localhost:5000/api/user/${decodedText}`);
+          // const res = await axios.get(`http://localhost:5000/api/user/${decodedText}`);
+;
+const res = await axios.get(`${baseURL}/api/user/${decodedText}`);
 
 
             setUserData(res.data);
