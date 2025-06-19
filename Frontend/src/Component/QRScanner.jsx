@@ -39,7 +39,7 @@ const [verified, setVerified] = useState(false);
          // Inside QRScanner.jsx
           // const res = await axios.get(`http://localhost:5000/api/user/${decodedText}`);
 ;
-const res = await axios.get(`${baseURL}/api/user/${decodedText}`);
+        const res = await axios.get(`${baseURL}/api/user/${decodedText}`);
 
 
             setUserData(res.data);

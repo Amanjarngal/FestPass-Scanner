@@ -9,7 +9,9 @@ const userRoute = require("./routes/user"); // ✅ correct require
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 // ✅ Attach routes
 app.use("/api/register", registerRoute);
 app.use("/api/user", userRoute);
