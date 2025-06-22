@@ -69,6 +69,9 @@ const baseURL = import.meta.env.VITE_API_BASE_URL;
         className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 py-10"
         data-aos="fade-up"
       >
+    <p className="mt-3 text-sm text-white text-center italic mb-5">
+  (If you're experiencing any delay in generating the QR code after clicking REGISTER, <span className="underline underline-offset-2">please wait a few moments</span> as the server may be under heavy load.)
+</p>
         <div
           className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl p-8 w-full max-w-2xl border border-white/20 drop-shadow-[0_4px_30px_rgba(255,255,255,0.6)]"
           data-aos="zoom-in"
